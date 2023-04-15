@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoorDash Food Delivery & Takeout-From Resturants Near You</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pics/logo2.png" type="image/x-icon">
+    <script src="'https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+        *{
+            max-width: 100%;
+            box-sizing: border-box;
+            margin-left: 0px;  
+            margin-right: 0px; 
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .back-img{
+            width: 110%;
+            height: 600px;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+       
+
+        .container{
+            position: relative;
+        }
+        h1{
+            position: absolute;
+            top: 23%;
+            left: 30%;
+            font-size: 60px;
+            color: white;
+        }
+        .button{
+            position: absolute;
+            top: 43%;
+            left: 37%;
+           width: 450px;
+          
+        }
+        .center{
+            position: absolute;
+            top: 63%;
+            left: 42%;
+            font-size: 18px;
+            }
+        .center a{
+            color: white;
+        }
+     .top_nav{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+     }
+    .top_nav nav  {
+     margin-right: 5px;
+     
+     }
+       .top_nav nav ul li {
+    display: inline-block;
+    }
+    .top_nav nav ul li:first-of-type {
+    text-decoration: none;             
+    }
+
+    .top_nav nav ul li:first-of-type a {
+         text-decoration: none;             
+      color: white;
+      font-size: 19px;
+        }
+    .top_nav nav ul li:nth-of-type(2)   {
+    background-color: white;
+    padding-inline: 20px;
+    padding-block: 10px;
+    margin-top: 0px;
+    border-radius: 40px;
+    
+     }
+    .top_nav nav ul li:nth-of-type(2) a  {
+ font-size: 19px;
+ text-decoration: none;
+ color: black;
+     }
+        .image1 {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            top: 40px;
+            left: 30px;
+            margin: 50px;
+            padding: 30px;
+           text-align: center;
+         }
+       
+        .image2{
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            top: 50px;
+            left: 500px;
+            margin: 50px;
+            padding: 30px;
+           text-align: center;
+        }
+        .image3 {
+            position: absolute;
+            width: 50px;
+            width: 350px;
+            height: 350px;
+            top: 30px;
+            left: 1000px;
+            margin: 50px;
+            padding: 30px;
+           text-align: center;
+          }
+        .Big-container{
+            position: relative;
+            Max-width: 100%;
+            height: 450px;
+        }   
+        .image1:hover{
+            background-color:lightgray;
+            color: white;
+
+        }
+        .image2:hover{
+            background-color:lightgray;
+            color: white;
+
+        }
+        .image3:hover{
+            background-color:lightgray;
+            color: white;
+
+        }
+        .Get-App{
+            position: absolute;
+            width: 45%;
+            height: 500px;
+            right: 80px;
+            bottom: -100px;
+            
+            
+        }
+        .content{
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            left: 100px;
+            top: 150px;
+            text-align: center;
+             }
+        .Big-container2{
+            position: relative;
+            background-color:rgb(255, 240, 237);
+            max-width: 100%;
+            height: 600px;
+            top: 80px;
+            z-index: 1;
+            box-sizing: border-box;
+            }
+         .Get-App2{
+            position: absolute;
+            width: 45%;
+            height: 500px;
+            left: 150px;
+            top: 20px;
+            z-index: -1;
+            }
+        .content2{
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            right: 100px;
+            top: 180px;
+            text-align: center;
+             }
+        .Big-container3{
+            background-color:black;
+            max-width: 100%;
+            height: 800px;
+           color: white;
+             }
+             ul , li{
+                list-style:none ;
+                
+             }
+            
+       .First-col{
+                color: white;
+                display: flex;
+                width: 40%;
+                margin-top: 100px;
+                margin-left: 70px;
+                line-height: 30px;   
+             }
+        .sec-col{
+                color: white;
+                display: flex;
+                width: 40%;
+                margin-bottom: 200px;
+                margin-left: 10px;
+            }
+             
+        .Top-div{
+                width: 200px;
+                margin-left:60px;
+                margin-bottom: -30px;
+             }
+        .input-icons i {
+            position: absolute;
+            width: 100px;
+            
+        }
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .bi {
+            padding: 10px;
+            min-width: 50px;
+            text-align:left;
+            width: 100px;
+            height: 100%;
+        }
+        .input-field {
+            width: 390px;
+            height: 40px;
+            padding: 10px;
+            text-align: left;
+            text-indent: 24px;
+            border-radius: 25px;
+            border: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <img class="back-img" src="pics/top-background.jpg" alt="backgrond">
+    <h1> <b> Restaurants and more,<br> delivered to your door</b></h1>
+    <p class="center"><a href="#">sign in for saved address</a></p>
+    </div>
+
+    <div class="top_nav">
+        <nav>
+            <ul>
+                <b>
+                <li> <a href="#"> Sign In</a></li>
+                <li> <a href="#"> sign Up</a></li>
+                </b>
+            </ul>
+          </nav>
+    </div>
+    
+    <div class="button">
+    <form style="max-width:450px;margin:auto">
+        <div class="input-icons">
+            <i style="color: black; font-size: 20px;" class="bi bi-geo-alt"></i>
+      <input style="outline: blue;" class ="input-field" 
+         type="text" 
+      placeholder= "Enter delivery address">
+     <i style="color: red; font-size: 35px;top: -8px; right: 9px; " class="bi bi-arrow-right-circle-fill"></i>
+                </div>
+</div>
+<div class="Big-container"> 
+   <div class="image1"> 
+    <img src="https://cdn.doordash.com/media/consumer/home/landing/new/ScootScoot.svg" alt="Become a dasher">
+    <h2><p>Become a Dasher</p></h2>
+    <p> <b>As a delivery driver, you'll <br> make reliable money—working <br> anytime, anywhere.</b></p>  <p style="color: red;"><b>Start earning
+        <i style="color: red; margin-left: 50px;" class="bi bi-arrow-right-short"></i></b></p>
+</div>
+<div class="image2">
+     <img   src="https://cdn.doordash.com/media/consumer/home/landing/new/Storefront.svg" alt="Become a partner"> 
+     <h2><p><b> Become a <br> Partner</b></p></h2>
+     <p> <b> Grow your business and reach <br> new customers by partnering <br> with us.</b> </p>
+       <p style="color: red;"><b>Sign up your store  <i style="color: red;" class="bi bi-arrow-right-short"> </i></b></p>
+</div>
+<div class="image3">
+      <img style="width: 180px;" src="https://cdn.doordash.com/media/consumer/home/landing/new/iphone.svg" alt="Try the app">
+      <h2><p><b>Try the App</b></p></h2>
+      <p> <b>  <br> Experience the best your <br> neighborhood has to offer, all <br> in one app.</b> </p>
+       <p style="color: red;"><b>Get the app <i style="color: red;" class="bi bi-arrow-right-short"> </i></b></p>
+      
+</div>
+</div>
+<div class="Big-container">
+<div > 
+    <img class="Get-App" src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1024,format=auto,quality=50/https://cdn.doordash.com/media/consumer/home/landing/new/all_in_one.jpg" alt="Get the App">
+    </div>
+    <div class="content">
+      <h2 style="font-size: 36px;"><b>It's all here.<br>
+        All in one app.</b></h2>
+        <p style="font-size: 22px;"><b>Discover local, on-demand delivery or Pickup <br> from restaurants, nearby grocery and convenience <br> stores, and more. </b></p>
+      <b> <input style="width: 150px; height: 40px; border-radius: 18px; border-style: none; background-color: red; color: white;" type="submit" value="Get the app"></b> 
+    </div>
+</div>
+<div class="Big-container2">
+      <div>
+     <img class="Get-App2" src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1024,format=auto,quality=50/https://cdn.doordash.com/media/consumer/home/landing/new/ev_fla_wel_alt.jpg" alt="Find Restaurants"> 
+     </div>
+     <div class="content2">
+        <h2 style="font-size: 24px;"><b> Every Flavor Welcome </b></h2>
+          <p style="font-size: 18px;"><b>From your neighborhood sushi spot to the burger <br> and fries you crave, choose from over 300,000 <br> local and national favorites across the U.S.,<br> Canada and Australia.</b></p>
+        <b><input style="width: 150px; height: 40px; border-radius: 18px; border-style: none; background-color: red; color: white;" type="submit" value="Find restaurants"></b> 
+      </div>
+    </div>
+    <br> <br> <br> <br>
+    
+    <footer class="ft">
+        
+        <div class="first_ulB">
+           <h3>Top Cities</h3>
+            <ul>   
+<li> New York City</li>
+<li>Los Angeles</li>
+<li>Toronto</li>
+<li>Chicago</li>
+<li>Houston</li>
+<li>Brooklyn</li>
+<li>San Diego</li>
+<li>Las Vegas</li>
+           </ul>
+
+           <ul>
+<li>San Francisco</li>
+<li>Seattle</li>
+<li>Atlanta</li>
+<li>Queens</li>
+<li>Vancouver, BC</li>
+ <li>Miami</li>
+<li>San Antonio</li>
+<li>Phoenix</li>
+</ul>
+
+<ul>
+<li>Denver</li>
+<li>Austin</li>
+<li>Washington, DC</li>
+<li>Dallas</li>
+<li>Melbourne</li>
+<li>Sydney</li>
+<li>Montreal</li>
+<li>All Cities</li>
+</ul>
+</div>
+
+
+<div class="sec_ul">
+    <h3>Top Cuisines Near You </h3>
+<ul>
+<li>Pizza Near Me</li>
+<li>Chinese Food Near Me</li>
+<li>Sushi Near Me</li>
+<li>Cafe Near Me</li>
+<li>Mexican Food Near Me</li>
+<li>Thai Food Near Me</li>
+<li>Lunch Near Me</li>
+<li>Seafood Near Me</li>
+</ul>
+
+<ul>
+<li>Indian Food Near Me</li>
+  <li>Dessert Near Me</li>
+  <li>Burgers Near Me</li>
+  <li>Asian Food Near Me</li>
+  <li>Italian Food Near Me</li>
+  <li>Vegan Food Near Me</li>
+  <li>Sandwiches Near Me</li>
+  <li>Restaurants Near Me</li>
+</ul>
+</div>
+
+
+
+<div class="third_ul">
+    <div class="ul-1">
+        <h3>Get To Know Us </h3>
+        <ul>
+    <li>About Us</li>
+    <li>Careers</li>
+    <li>Investors</li>
+    <li>Company Blog</li>
+    <li>Engineering Blog</li>
+    <li>Merchant Blog</li>
+    <li>Gift Cards</li>
+    <li>Promotions</li>
+    <li>Dasher Central</li>
+    <li>DoorDash Stories</li>
+    <li>LinkedIn</li>
+    <li>Glassdoor</li>
+    <li>Accessibility</li>
+
+        </ul>
+    </div>
+
+
+    <div class="ul-2">
+        <ul>
+    <h3>let Us Help You</h3>
+    <li>Account Details</li>
+    <li>Order History</li>
+    <li>Help</li>
+        </ul>
+    </div>
+
+
+    <div class="ul-3">
+        <h3>Doing Business</h3>
+        <ul>  
+    <li>Become a Dasher</li>
+    <li>List Your Business</li>
+    <li>Get Dashers for Deliveries</li>
+    <li>Get DoorDash for Work</li>
+
+        </ul>
+    </div>
+</div>
+ <div class="last_footer_social">
+  <img src="/pics/logo3.jpeg" alt="">
+    <ul> Terms of Service
+    <li>Privacy</li>
+        <li>Delivery Locations</li>
+    <li>California Privacy</li>
+   <li> Do Not Sell or Share My Personal Information</li>
+    </ul>
+    <span>
+    © 2023 DoorDash
+</span>
+ <div class="universe">
+    <span><i class="bi bi-globe2"></i></span>
+<form >
+    <select style="border: none;" name="" id="">
+        <option value="">English&#10088;US&#10089;</option>
+        <option value="">Espanyol</option>
+        <option value="">Portugese</option>
+        <option value="">French</option>
+        <option value="">German</option>
+        <option value="">Arabic</option>
+        <option value="">Russian</option>
+    </select>
+</form>
+</div>
+<div class="social_f_t_i">
+    <span><i class="bi bi-facebook"></i></span>
+    <span><i class="bi bi-twitter"></i></span>
+    <span><i class="bi bi-instagram"></i></span>
+</div>
+ </div>
+    </footer>
+</body>
+</html>
